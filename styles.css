@@ -1,3 +1,11 @@
+body {
+  background-image: url("./mtns3.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: bottom 30% right 50%;
+  background-origin: content-box;
+}
+
 .hidden {
   display: none;
 }
@@ -15,8 +23,17 @@
 
 }
 
+.form,
 .story {
-  padding: 10px;
+  padding: 20px;
+}
+
+#write {
+  margin: 16px;
+}
+
+p {
+  text-align: left;
 }
 
 li {
@@ -25,5 +42,37 @@ li {
 }
 
 button {
+  margin: 15px;
+}
 
+
+@media (max-width: 840px) {
+  body {
+    background-position: center;
+  }
+
+  .form,
+  .story {
+    text-align: center;
+  }
+
+  #write {
+    margin: 10px 16px 16px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .form {
+    padding: 0;
+  }
+
+  button {
+    margin: 5px;
+  }
+
+  .story {
+    padding: 10px;
+  }
 }
